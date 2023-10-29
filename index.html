@@ -20,7 +20,7 @@
 					</div>
 				<!-- Header -->
 					<header id="header">
-						<a href="assets/sass/Fadly Ghani.pdf" class="logo">Download CV</a>
+						<a href="assets/css/Fadly Ghani v1.pdf" class="logo">Download CV</a>
 					</header>
 				<!-- Nav -->
 					<nav id="nav">
@@ -40,12 +40,39 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">Oct 28, 2023</span>
-                  <marquee behavior="alternate">
-                      <p style="text-align:center; font-size: 35px; color: #3498db; font-weight: bold; font-family: 'Arial', sans-serif;">Feel free to reach out to me for further details</p>
-                  </marquee>
+									<span class="date">Sept 28, 2023</span>
+                  <!--Typing and glowStyle-->
+                  <style>
+                    @keyframes typing {
+                      from { width: 0; }
+                      to { width: 70%; }
+                    }
+                    type-glow {
+                      display: inline-block;
+                      border-right: 1.5px solid #000; /* Adjust border style needed */
+                      white-space: nowrap;
+                      overflow: hidden;
+                      animation: typing 4s steps(14) alternate;
+                      animation-delay: 2s; /* Delay the animation by 2 seconds */
+                      color: #265a87; /* Set the text color to #1A2E52 */
+                      font-size: 25px; /* Set font size to 20 */
+                      font-weight: bold; /* Make the text bold */
+                      font-family: Arial, sans-serif; /* Set font to Arial */
+                    }
+                    type-glow:hover {
+                      text-shadow: 0 0 10px rgba(0, 20, 200, 5); /* Glow n hover */
+                    }
+                  </style>
+                  <!---->
+                  <type-glow>Don't hesitate to contact me for further details.😊
 								</header>
-								<a href="aboutme.html" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+                <style>
+                  /* Your existing styles */
+                  .image.main:hover {
+                    box-shadow: 0 0 20px rgba(0, 20, 200, 5); /* Glow effect on hover */
+                  }
+                </style>
+                <a href="aboutme.html" class="image main"><img src="images/pic01.jpg" alt="" /></a>
 								<ul class="actions special">
 									<li><a href="#" class="button large">Full Story</a></li>
 								</ul>
@@ -61,6 +88,7 @@
 									<a href="#" class="next">Next</a>
 								</div>
 							</footer>
+
 					</div>
 				<!-- Footer -->
 					<footer id="footer">
