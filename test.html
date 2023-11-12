@@ -1,0 +1,54 @@
+
+<h1>MCQ Quiz</h1>
+
+<form id="quizForm">
+    <h2>Question 1:</h2>
+    <p>What is the capital of France?</p>
+    <label>
+        <input type="radio" name="q1" value="a"> a) Madrid
+    </label><br>
+    <label>
+        <input type="radio" name="q1" value="b"> b) Rome
+    </label><br>
+    <label>
+        <input type="radio" name="q1" value="c"> c) Paris
+    </label><br><br>
+
+    <h2>Question 2:</h2>
+    <p>What is 2 + 2?</p>
+    <label>
+        <input type="radio" name="q2" value="a"> a) 3
+    </label><br>
+    <label>
+        <input type="radio" name="q2" value="b"> b) 4
+    </label><br>
+    <label>
+        <input type="radio" name="q2" value="c"> c) 5
+    </label><br><br>
+
+    <input type="button" value="Submit" onclick="checkAnswers()">
+</form>
+
+<script>
+function checkAnswers() {
+    var q1 = document.querySelector('input[name="q1"]:checked');
+    var q2 = document.querySelector('input[name="q2"]:checked');
+    var score = 0;
+
+    if (q1 && q2) {
+        if (q1.value === "c") {
+            score++;
+        }
+        if (q2.value === "b") {
+            score++;
+        }
+
+        alert("You got " + score + " out of 2 correct!");
+    } else {
+        alert("Please answer all questions!");
+    }
+}
+</script>
+
+</body>
+</html>
