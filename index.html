@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="is-prelad">
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 				<!-- Intro -->
@@ -30,6 +30,23 @@
               				<li><a href="github.html">GitHub</a></li>
 							<li><a href="roadmap.html">Roadmap</a></li>
 							<li><a href="elements.html">Others</a></li>
+							<!-- Droplist -->
+							<script>
+								function showSelectedLink() {
+									var dropdown = document.getElementById("hyperlinkDropdown");
+									var selectedLink = dropdown.value;
+							
+									if (selectedLink) {
+										window.location.href = selectedLink;
+									}
+								}
+							</script>							
+							<select id="hyperlinkDropdown" onchange="showSelectedLink()">
+								<option value="" disabled selected>Projects</option>
+								<option value="Projects/livestream.html">Livestream</option>
+								<option value="">CTF</option>
+							  </select>							  
+							<!--  -->
 						</ul>
 						<ul class="icons">
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
