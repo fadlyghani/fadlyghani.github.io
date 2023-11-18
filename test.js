@@ -1,6 +1,7 @@
 //Write for me Level 1 javascript, title, question and asnwer with comment.
 
 //►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
+//FUNCTION FUNCTION_NAME FUNCTION_VARIABLE
 function squareNumber(num) {
     console.log("Question 01: Find the Square of a Number") //const declare a variable that cannot be changed 
     const square = num ** 2;// Use the `**` operator to calculate the square
