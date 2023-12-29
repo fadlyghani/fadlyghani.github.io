@@ -18,7 +18,8 @@
         var mediaDisplay = document.getElementById("mediaDisplay");
         if (finalScore < 5) {
             // Score is less than 1
-            mediaDisplay.innerHTML = "<video src='images/vid99.mp4' width='450' height='auto' autoplay controls></video>";
+            mediaDisplay.innerHTML = "<video src='../images/vid99.mp4' width='450' height='auto' autoplay controls></video>";
+            mediaDisplay.innerHTML = "<video src='../images/vid99.mp4' width='450' height='auto' autoplay controls></video>";
         } else if (finalScore > 4) {
             // Show pic2 or vid2
             mediaDisplay.innerHTML = "<img src='images/q99.pic.png' width='450' height='auto'>";
@@ -34,6 +35,6 @@
     </script>
 
     <button onclick="location.href='page1.html'">Restart</button>
-    <button onclick="location.href='../portfolio2/index.html'">HOME</button>
+    <button onclick="location.href='index.html'">HOME</button>
 </body>
 </html>
