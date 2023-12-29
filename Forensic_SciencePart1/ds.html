@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHub</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f8f8;
+            color: #333;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        h1 {
+            font-size: 4em;
+            margin-bottom: 30px;
+            background-image: linear-gradient(120deg, #2980b9, #6dd5fa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            animation: glow 2s linear infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            to {
+                text-shadow: 0px 0px 10px #2980b9, 0px 0px 20px #6dd5fa, 0px 0px 30px #6dd5fa;
+            }
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        button {
+            background-color: #34a853;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        button:hover {
+            background-color: #2b8a3e;
+        }
+    </style>
+</head>
+<body>
+    <section class="content">
+        <h1>TechHub</h1>
+        <p>Discover the latest innovations.</p>
+        <button>Explore</button>
+    </section>
+    <section class="content">
+        <h1>TEAM</h1>
+        <p>Meet the minds behind TechHub.</p>
+        <button>Meet the Team</button>
+    </section>
+</body>
+</html>

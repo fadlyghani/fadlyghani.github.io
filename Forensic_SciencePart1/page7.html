@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title><!-- ►►►Step:1 [OPTIONAL]-->
+    <link rel="stylesheet" href="css1.css">
+</head>
+<body>
+    <h1>Question 7:</h1><!-- ►►►Step:2 [Question]-->
+    <p>What is the goal of computer forensics?</p><!-- ►►►Step:3 [Question]-->
+    <form id="question1Form">
+        <input type="radio" name="q1" value="1"> <label for="paris" style="font-size: 17px;font-weight: bold;">To investigate physical crimes</label><br>
+        <input type="radio" name="q1" value="2"> <label for="london" style="font-size: 17px;font-weight: bold;">To prevent cybercrime</label><br>
+        <input type="radio" name="q1" value="3"> <label for="berlin" style="font-size: 17px;font-weight: bold;">To analyze non-digital evidence</label><br>
+        <input type="radio" name="q1" value="4"> <label for="rome" style="font-size: 17px;font-weight: bold;">To identify, preserve, recover, analyze, and present digital evidence in a way that is legally admissible.</label><br>
+        <button type="button" onclick="checkAnswer()">Check Answer</button>
+    </form>
+    
+
+    <p id="answerDisplay"></p>
+
+    <script>
+        function checkAnswer() {
+            var correctAnswer = "4";//►►►Step:4 [Correct Answer]
+            var selectedAnswer = document.querySelector('input[name="q1"]:checked');
+            if (selectedAnswer) {
+                if (selectedAnswer.value === correctAnswer) {
+                    document.getElementById("answerDisplay").innerHTML = "Correct Answer!";
+                    sessionStorage.setItem('q1Answer', selectedAnswer.value);
+                    var score = sessionStorage.getItem('score') ? parseInt(sessionStorage.getItem('score')) : 0;
+                    score++;
+                    sessionStorage.setItem('score', score);
+                } else {
+                    document.getElementById("answerDisplay").innerHTML = "Explanation The goal of computer forensics is to identify, preserve, recover, analyze, and present digital evidence in a way that is legally admissible, while maintaining the integrity and chain of custody of the evidence.";//►►►Step:5 EXPLAIN]
+                }
+                document.getElementById("nextQuestion").href = "page8.html"; //►►►Step:6 [Correct Answer Description]
+                document.getElementById("nextQuestion").style.display = "block"; //►►►Step:7 [Next Page:++i]
+            } else {
+                document.getElementById("answerDisplay").innerHTML = "Please select an answer.";
+            }
+        }
+    </script>
+
+    <a id="nextQuestion" href="#" style="display: none;">Next Question</a>
+</body>
+</html>

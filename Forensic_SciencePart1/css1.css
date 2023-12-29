@@ -1,0 +1,69 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #007bff;
+  background-color: #e7f0ff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+p {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+form {
+  text-align: left;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.radio-option {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+#question1Form label {
+  font-size: 4em; /* Change the value to adjust the font size */
+}
+#answerDisplay {
+        width: 50%; /* Adjust the width percentage as needed */
+        margin: 1 auto; /* Center the container horizontally */
+        border: 1px solid #ccc; /* Optional: Adding a border for visual clarity */
+        padding: 15px; /* Optional: Adding padding for spacing */
+    }

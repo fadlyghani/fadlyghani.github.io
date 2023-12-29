@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Score Display</title>
+    <link rel="stylesheet" href="css1.css">
+</head>
+<body>
+    <h1>Final Score</h1>
+    <p id="scoreDisplay"></p>
+    <div id="mediaDisplay"></div>
+
+    <script>
+        // Retrieve and display the final score
+        var finalScore = sessionStorage.getItem('score');
+        document.getElementById("scoreDisplay").innerHTML = "Your final score is: " + (finalScore ? finalScore : 0);
+
+        // Conditional display of media based on score
+        var mediaDisplay = document.getElementById("mediaDisplay");
+        if (finalScore < 5) {
+            // Score is less than 1
+            mediaDisplay.innerHTML = "<video src='../portfolio2/images/vid99.mp4' width='450' height='auto' autoplay controls></video>";
+        } else if (finalScore > 4) {
+            // Show pic2 or vid2
+            mediaDisplay.innerHTML = "<img src='../portfolio2/images/q99.pic.png' width='450' height='auto'>";
+            // Or for video: mediaDisplay.innerHTML = "<video src='vid2.mp4' controls></video>"; // Replace 'vid2.mp4' with your actual video source
+        } else {
+            // Show pic1 or vid1
+            mediaDisplay.innerHTML = "<video src='../portfolio2/images/vid99.mp4' width='450' height='auto' autoplay controls></video>";
+            // Or for video: mediaDisplay.innerHTML = "<video src='vid1.mp4' controls></video>"; // Replace 'vid1.mp4' with your actual video source
+        }
+
+        // Clear session storage after displaying the score
+        sessionStorage.clear();
+    </script>
+
+    <button onclick="location.href='page1.html'">Restart</button>
+    <button onclick="location.href='../portfolio2/index.html'">HOME</button>
+</body>
+</html>
